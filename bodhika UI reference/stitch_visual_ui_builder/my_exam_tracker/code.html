@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"primary":"#000000","on-primary-container":"#858383","error":"#ba1a1a","primary-container":"#1c1b1b","on-background":"#1a1c1d","inverse-surface":"#2f3132","on-error-container":"#93000a","on-error":"#ffffff","on-primary":"#ffffff","secondary-container":"#c3ecd7","error-container":"#ffdad6","on-surface":"#1a1c1d","tertiary-fixed-dim":"#d5c4ad","on-secondary-fixed":"#002115","on-primary-fixed":"#1c1b1b","secondary-fixed-dim":"#a8cfbc","secondary":"#416656","background":"#f9f9fa","primary-fixed-dim":"#c8c6c5","surface":"#f9f9fa","surface-dim":"#dadadb","on-tertiary-fixed-variant":"#504534","on-primary-fixed-variant":"#474746","secondary-fixed":"#c3ecd7","on-tertiary":"#ffffff","tertiary":"#000000","surface-container":"#eeeeef","outline-variant":"#c4c7c7","on-tertiary-fixed":"#231a0c","on-surface-variant":"#444748","surface-container-high":"#e8e8e9","surface-container-lowest":"#ffffff","tertiary-fixed":"#f2e0c8","surface-container-low":"#f3f3f4","outline":"#747878","on-secondary":"#ffffff","surface-tint":"#5f5e5e","primary-fixed":"#e5e2e1","tertiary-container":"#231a0c","surface-bright":"#f9f9fa","on-secondary-fixed-variant":"#294e3f","on-secondary-container":"#476c5b","surface-container-highest":"#e2e2e3","surface-variant":"#e2e2e3","on-tertiary-container":"#90826e","inverse-primary":"#c8c6c5","inverse-on-surface":"#f0f1f2"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"24px","sm":"16px","md":"24px","xs":"8px","margin-desktop":"32px","base":"4px","xl":"64px","margin-mobile":"16px","lg":"40px"},"fontFamily":{"title-md":["Inter"],"headline-lg":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"label-sm":["Inter"],"body-md":["Inter"],"headline-lg-mobile":["Inter"],"display-lg":["Inter"]},"fontSize":{"title-md":["20px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0.01em","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"600"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-background"><aside class="fixed left-0 top-0 h-full w-[280px] bg-surface-container-lowest z-50 flex flex-col shadow-[4px_0_24px_rgba(0,0,0,0.02)] overflow-y-auto"><div class="p-lg mb-xs flex items-center gap-xs"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary">school</span></div><span class="font-title-md text-title-md text-on-surface tracking-tight">Bodhika</span></div><nav class="flex-1 px-sm space-y-base" data-active-classes="bg-secondary-container text-on-secondary-container font-medium"><a aria-current="page" class="flex items-center px-md py-sm rounded-xl transition-all bg-secondary-container text-on-secondary-container font-medium" data-path="dashboard" href="#"><span class="material-symbols-outlined mr-sm">dashboard</span><span class="font-label-md text-label-md">Dashboard</span></a><div class="pt-sm pb-base px-md text-label-sm font-label-sm uppercase tracking-widest text-outline">Examination</div><a class="flex items-center px-md py-sm rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="exams" href="#"><span class="material-symbols-outlined mr-sm">assignment</span><span class="font-label-md text-label-md">Exams</span></a><a class="flex items-center px-md py-sm rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="my-performance" href="#"><span class="material-symbols-outlined mr-sm">monitoring</span><span class="font-label-md text-label-md">My Performance</span></a><a class="flex items-center px-md py-sm rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="my-certificates" href="#"><span class="material-symbols-outlined mr-sm">workspace_premium</span><span class="font-label-md text-label-md">My Certificates</span></a><div class="pt-sm pb-base px-md text-label-sm font-label-sm uppercase tracking-widest text-outline">Academic</div><a class="flex items-center px-md py-sm rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="my-exams" href="#"><span class="material-symbols-outlined mr-sm">clinical_notes</span><span class="font-label-md text-label-md">My Exams</span></a><a class="flex items-center px-md py-sm rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="study-resources" href="#"><span class="material-symbols-outlined mr-sm">library_books</span><span class="font-label-md text-label-md">Study Resources</span></a><a class="flex items-center px-md py-sm rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="exampath-directory" href="#"><span class="material-symbols-outlined mr-sm">explore</span><span class="font-label-md text-label-md">ExamPath Directory</span></a><div class="pt-sm pb-base px-md text-label-sm font-label-sm uppercase tracking-widest text-outline">Preferences</div><a class="flex items-center px-md py-sm rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined mr-sm">settings</span><span class="font-label-md text-label-md">Settings</span></a></nav></aside><div class="pl-[280px]"><header class="fixed top-0 left-[280px] right-0 h-20 bg-surface-bright/80 backdrop-blur-xl z-40 flex items-center justify-between px-xl shadow-[0_4px_24px_rgba(0,0,0,0.02)]"><div class="flex items-center gap-md"><div class="h-10 w-[400px] bg-surface-container-low rounded-full flex items-center px-md gap-sm"><span class="material-symbols-outlined text-outline">search</span><input class="bg-transparent border-none outline-none text-body-md w-full text-on-surface" placeholder="Search exams, resources, results..." type="text"/></div></div><div class="flex items-center gap-lg"><div class="flex items-center gap-sm"><div class="text-right hidden sm:block"><div class="font-label-md text-label-md text-on-surface">Kethavath Shivakumar</div><div class="font-label-sm text-label-sm text-on-surface-variant">Student ID: BDK-2024</div></div><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">person</span></div></div><button class="flex items-center gap-xs px-md py-sm rounded-full bg-surface-container-high text-on-surface hover:bg-error-container hover:text-on-error-container transition-colors"><span class="material-symbols-outlined text-[18px]">logout</span><span class="font-label-md text-label-md">Logout</span></button></div></header><main class="pt-20 min-h-screen bg-background p-xl"><div class="flex flex-col w-full gap-xl pb-xl">
+<!-- Header Summary Section -->
+<section class="flex flex-col gap-md">
+<div class="flex flex-col gap-xs">
+<h1 class="font-display-lg text-display-lg text-on-surface">My Exam Tracker</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Monitor your upcoming examination schedules, registration deadlines, and completion statuses all in one place.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md pt-sm">
+<!-- Summary Card 1: Registered -->
+<div class="bg-surface-container-low rounded-xl p-md flex flex-col justify-between relative overflow-hidden group shadow-sm transition-transform hover:-translate-y-1">
+<div class="absolute top-0 right-0 p-md opacity-20 transform translate-x-4 -translate-y-4 group-hover:rotate-12 transition-transform duration-500">
+<span class="material-symbols-outlined text-[64px] text-primary">app_registration</span>
+</div>
+<div class="flex items-center gap-xs text-on-surface-variant font-label-md text-label-md uppercase tracking-wider mb-lg relative z-10">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+                    Registered
+                </div>
+<div class="font-display-lg text-display-lg text-on-surface relative z-10">0</div>
+</div>
+<!-- Summary Card 2: Completed -->
+<div class="bg-surface-container-low rounded-xl p-md flex flex-col justify-between relative overflow-hidden group shadow-sm transition-transform hover:-translate-y-1">
+<div class="absolute top-0 right-0 p-md opacity-20 transform translate-x-4 -translate-y-4 group-hover:rotate-12 transition-transform duration-500">
+<span class="material-symbols-outlined text-[64px] text-primary">task_alt</span>
+</div>
+<div class="flex items-center gap-xs text-on-surface-variant font-label-md text-label-md uppercase tracking-wider mb-lg relative z-10">
+<div class="w-2 h-2 rounded-full bg-on-secondary-fixed"></div>
+                    Completed
+                </div>
+<div class="font-display-lg text-display-lg text-on-surface relative z-10">0</div>
+</div>
+<!-- Summary Card 3: Skipping -->
+<div class="bg-surface-container-low rounded-xl p-md flex flex-col justify-between relative overflow-hidden group shadow-sm transition-transform hover:-translate-y-1">
+<div class="absolute top-0 right-0 p-md opacity-20 transform translate-x-4 -translate-y-4 group-hover:rotate-12 transition-transform duration-500">
+<span class="material-symbols-outlined text-[64px] text-primary">block</span>
+</div>
+<div class="flex items-center gap-xs text-on-surface-variant font-label-md text-label-md uppercase tracking-wider mb-lg relative z-10">
+<div class="w-2 h-2 rounded-full bg-error"></div>
+                    Skipping
+                </div>
+<div class="font-display-lg text-display-lg text-on-surface relative z-10">0</div>
+</div>
+<!-- Summary Card 4: Remaining -->
+<div class="bg-surface-container-highest rounded-xl p-md flex flex-col justify-between relative overflow-hidden group shadow-md transition-transform hover:-translate-y-1">
+<div class="absolute top-0 right-0 p-md opacity-10 transform translate-x-4 -translate-y-4 group-hover:rotate-12 transition-transform duration-500">
+<span class="material-symbols-outlined text-[80px] text-primary">hourglass_empty</span>
+</div>
+<div class="flex items-center gap-xs text-on-surface font-label-md text-label-md uppercase tracking-wider mb-lg relative z-10">
+<div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
+                    Remaining
+                </div>
+<div class="font-display-lg text-display-lg text-on-surface relative z-10">89</div>
+</div>
+</div>
+</section>
+<!-- Main Content: Exam Table -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Table Header/Filters Bar -->
+<div class="p-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-md border-b border-surface-container">
+<h2 class="font-title-md text-title-md text-on-surface">Detailed Examination Log</h2>
+<div class="flex items-center gap-sm self-stretch sm:self-auto">
+<div class="h-10 bg-surface-container-low rounded-lg flex items-center px-sm gap-xs flex-1 sm:w-[240px]">
+<span class="material-symbols-outlined text-outline text-[20px]">filter_list</span>
+<input class="bg-transparent border-none outline-none text-body-md w-full text-on-surface" placeholder="Filter exams..." type="text"/>
+</div>
+<button class="h-10 px-md rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:opacity-90 transition-opacity flex items-center gap-xs whitespace-nowrap">
+<span class="material-symbols-outlined text-[18px]">download</span> Export
+                </button>
+</div>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse min-w-[800px]">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<th class="p-md font-medium">Exam / College</th>
+<th class="p-md font-medium">Track</th>
+<th class="p-md font-medium">Priority</th>
+<th class="p-md font-medium">Reg. Deadline</th>
+<th class="p-md font-medium text-right">My Status</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="p-md align-top">
+<div class="flex items-start gap-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant">school</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-[16px] leading-tight text-on-surface mb-1 group-hover:text-primary transition-colors">National Eligibility Entrance Test (NEET)</span>
+<span class="text-on-surface-variant text-[13px]">NTA - National Testing Agency</span>
+</div>
+</div>
+</td>
+<td class="p-md align-top">
+<span class="inline-flex items-center px-2 py-1 rounded-md bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Medical</span>
+</td>
+<td class="p-md align-top">
+<div class="flex gap-1 text-error">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</td>
+<td class="p-md align-top">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">15 Apr, 2024</span>
+<span class="text-error font-label-sm text-label-sm">3 Days left</span>
+</div>
+</td>
+<td class="p-md align-top text-right">
+<button class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors shadow-sm">
+                                Not Started
+                            </button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="bg-surface-bright hover:bg-surface-container transition-colors group">
+<td class="p-md align-top">
+<div class="flex items-start gap-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant">engineering</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-[16px] leading-tight text-on-surface mb-1 group-hover:text-primary transition-colors">Joint Entrance Examination (JEE) Main</span>
+<span class="text-on-surface-variant text-[13px]">NTA - National Testing Agency</span>
+</div>
+</div>
+</td>
+<td class="p-md align-top">
+<span class="inline-flex items-center px-2 py-1 rounded-md bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">Engineering</span>
+</td>
+<td class="p-md align-top">
+<div class="flex gap-1 text-error">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px] text-surface-variant" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</td>
+<td class="p-md align-top">
+<div class="flex flex-col">
+<span class="text-on-surface">30 May, 2024</span>
+</div>
+</td>
+<td class="p-md align-top text-right">
+<button class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors shadow-sm">
+                                Not Started
+                            </button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="p-md align-top">
+<div class="flex items-start gap-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant">architecture</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-[16px] leading-tight text-on-surface mb-1 group-hover:text-primary transition-colors">National Aptitude Test in Architecture (NATA)</span>
+<span class="text-on-surface-variant text-[13px]">Council of Architecture</span>
+</div>
+</div>
+</td>
+<td class="p-md align-top">
+<span class="inline-flex items-center px-2 py-1 rounded-md bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Architecture</span>
+</td>
+<td class="p-md align-top">
+<div class="flex gap-1 text-error">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px] text-surface-variant" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px] text-surface-variant" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</td>
+<td class="p-md align-top">
+<div class="flex flex-col">
+<span class="text-on-surface">12 Jun, 2024</span>
+</div>
+</td>
+<td class="p-md align-top text-right">
+<button class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors shadow-sm">
+                                Not Started
+                            </button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="bg-surface-bright hover:bg-surface-container transition-colors group">
+<td class="p-md align-top">
+<div class="flex items-start gap-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant">biotech</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-[16px] leading-tight text-on-surface mb-1 group-hover:text-primary transition-colors">AIIMS BSc Nursing Entrance</span>
+<span class="text-on-surface-variant text-[13px]">All India Institute of Medical Sciences</span>
+</div>
+</div>
+</td>
+<td class="p-md align-top">
+<span class="inline-flex items-center px-2 py-1 rounded-md bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Medical</span>
+</td>
+<td class="p-md align-top">
+<div class="flex gap-1 text-error">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</td>
+<td class="p-md align-top">
+<div class="flex flex-col">
+<span class="text-on-surface">05 Jul, 2024</span>
+</div>
+</td>
+<td class="p-md align-top text-right">
+<button class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors shadow-sm">
+                                Not Started
+                            </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination / Footer -->
+<div class="p-sm flex items-center justify-between border-t border-surface-container bg-surface-bright">
+<span class="font-body-md text-body-md text-on-surface-variant pl-sm">Showing 1 to 4 of 89 entries</span>
+<div class="flex gap-xs">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:bg-surface-container transition-colors disabled:opacity-50" disabled="">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md">1</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors font-label-md text-label-md">2</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors font-label-md text-label-md">3</button>
+<span class="w-8 h-8 flex items-center justify-center text-outline">...</span>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors font-label-md text-label-md">23</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+</div></main></div></body></html>
