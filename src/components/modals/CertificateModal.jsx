@@ -34,10 +34,10 @@ export default function CertificateModal({ certificate, onClose }) {
         </div>
 
         {/* Certificate Display Canvas */}
-        <div className="p-8 overflow-y-auto flex items-center justify-center bg-surface-dim/40">
+        <div className="p-3 sm:p-8 overflow-y-auto flex items-center justify-center bg-surface-dim/40">
           <div 
             id="printable-certificate"
-            className="w-full bg-white text-gray-900 border-[12px] border-double border-gray-300 p-10 rounded-xl relative shadow-hover-card"
+            className="w-full bg-white text-gray-900 border-[8px] sm:border-[12px] border-double border-gray-300 p-5 sm:p-10 rounded-xl relative shadow-hover-card"
             style={{ maxWidth: '720px', minHeight: '500px' }}
           >
             {/* Elegant Corner Motifs */}

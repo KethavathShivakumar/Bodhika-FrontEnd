@@ -53,9 +53,9 @@ export default function Header({
           </div>
         </div>
       </div>
-      {/* Search Input Bar */}
-      <div className="relative">
-        <div className="h-11 w-[380px] lg:w-[440px] bg-surface-container-low rounded-full flex items-center px-4 gap-2.5 transition-all focus-within:bg-surface-container-lowest focus-within:ring-1 focus-within:ring-primary shadow-sm">
+      {/* Middle: Search Input Bar (Desktop / Tablet) */}
+      <div className="relative hidden md:block flex-1 max-w-md mx-4">
+        <div className="h-11 w-full bg-surface-container-low rounded-full flex items-center px-4 gap-2.5 transition-all focus-within:bg-surface-container-lowest focus-within:ring-1 focus-within:ring-primary shadow-sm">
           <span className="material-symbols-outlined text-outline text-[20px]">search</span>
           <input
             type="text"
@@ -120,7 +120,7 @@ export default function Header({
           </button>
 
           {showNotifications && (
-            <div className="absolute right-0 top-12 w-80 bg-surface-container-lowest rounded-2xl shadow-float border border-outline-variant/30 py-3 z-50">
+            <div className="absolute right-0 top-12 w-80 max-w-[calc(100vw-2rem)] bg-surface-container-lowest rounded-2xl shadow-float border border-outline-variant/30 py-3 z-50">
               <div className="flex items-center justify-between px-4 pb-2 border-b border-surface-variant">
                 <span className="font-semibold text-sm text-on-surface">Notifications</span>
                 <span className="text-xs text-secondary font-medium cursor-pointer hover:underline">Mark all read</span>

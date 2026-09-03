@@ -7,7 +7,7 @@ export default function AttemptDetailsModal({ attempt, onClose, onRetake }) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/40 backdrop-blur-sm animate-in fade-in duration-200">
-      <div className="bg-surface-container-lowest rounded-[24px] shadow-float border border-outline-variant/30 max-w-2xl w-full overflow-hidden">
+      <div className="bg-surface-container-lowest rounded-[24px] shadow-float border border-outline-variant/30 max-w-2xl w-full max-h-[90vh] overflow-y-auto">
         {/* Header */}
         <div className="p-6 border-b border-surface-variant flex items-center justify-between">
           <div className="flex items-center gap-3">

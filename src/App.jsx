@@ -62,9 +62,10 @@ export default function App() {
   const [activeResourceModal, setActiveResourceModal] = useState(null);
   const [currentTakingExam, setCurrentTakingExam] = useState(null);
 
-  // Sidebar collapse state
-  const [sidebarOpen, setSidebarOpen] = useState(true);
-  const [savedSidebarState, setSavedSidebarState] = useState(true);
+  // Sidebar collapse state: on desktop (>=1024px) defaults to open; on mobile (<1024px) defaults to closed
+  const isMobile = () => typeof window !== 'undefined' && window.innerWidth < 1024;
+  const [sidebarOpen, setSidebarOpen] = useState(typeof window !== 'undefined' ? window.innerWidth >= 1024 : true);
+  const [savedSidebarState, setSavedSidebarState] = useState(typeof window !== 'undefined' ? window.innerWidth >= 1024 : true);
 
   // Toast state
   const [toast, setToast] = useState(null);
@@ -80,6 +81,13 @@ export default function App() {
     }
     setActivePage(page);
     setSubPage(sub);
+
+    // MOBILE BEHAVIOR:
+    // On mobile, selecting ANY page/navigation item automatically closes the sidebar.
+    if (isMobile()) {
+      setSidebarOpen(false);
+    }
+
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -195,21 +203,21 @@ export default function App() {
         }}
       />
 
-      {/* Left Collapsible Navigation Sidebar */}
+      {/* Left Collapsible Navigation Sidebar with Mobile Drawer Backdrop */}
       <Sidebar
         isOpen={sidebarOpen}
+        onClose={() => setSidebarOpen(false)}
+        onNavigate={handleNavigate}
         activePage={activePage}
-        setActivePage={(page) => handleNavigate(page, null)}
         subPage={subPage}
-        setSubPage={(sub) => setSubPage(sub)}
       />
 
-      {/* Main Workspace Area (Offset by 280px left sidebar when open, with smooth transition) */}
+      {/* Main Workspace Area (Offset by 280px left sidebar when open on desktop, with smooth transition) */}
       <div className={`flex-1 flex flex-col min-w-0 transition-all duration-300 ease-in-out ${
         sidebarOpen ? 'lg:pl-[280px]' : 'pl-0'
       }`}>
         {/* Page Content Canvas */}
-        <main className="pt-28 px-6 lg:px-12 pb-16 flex-1">
+        <main className="pt-24 sm:pt-28 px-4 sm:px-6 lg:px-12 pb-16 flex-1 w-full max-w-full overflow-x-hidden">
           {/* Page 1: Dashboard / Examination List */}
           {(activePage === 'dashboard' || (activePage === 'exams' && subPage === 'upcoming')) && (
             <ExaminationListPage
